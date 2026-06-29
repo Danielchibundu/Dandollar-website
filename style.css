@@ -1,0 +1,25 @@
+h2{
+    color:blue;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ol{
+    background-color:green;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 100;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    line-height: 2;
+}
+#services{
+    color:blue;
+}
+.welcome{
+    background-color:magenta
+}
+#body{
+    background-color:yellow;
+}
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+}

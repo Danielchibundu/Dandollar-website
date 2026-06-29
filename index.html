@@ -1,101 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dandollar Music Production Studios</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #020617;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #14b8a6;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #14b8a6;
+    }
+
+    .hero {
+      padding: 100px 8%;
+      text-align: center;
+      background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url("download 2.jfif");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #14b8a6;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 60px 8%;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #14b8a6;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #334155;
+    }
+
+    .card i {
+      font-size: 35px;
+      color: #14b8a6;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #334155;
+    }
+
+    th {
+      background: #14b8a6;
+      color: white;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img, video {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+    }
+
+    .socials a {
+      color: white;
+      font-size: 24px;
+      margin: 0 10px;
+    }
+
+    .socials a:hover {
+      color: #14b8a6;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+
+      .hero h2 {
+        font-size: 34px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Dandollar Music Production Studios</h1>
-    <h2>The Best Place for all your Music Production Needs</h2>
-    <h3>Welcome to Dandollar Music Production Studios!</h3>
-    <h4>we offer a wide range of services to meet all your needs.</h4>
-    <h5>Our services are rendered from the finest musicians around the world.</h5>
-    <h6>We are committed to providing our customers with the best possible service and support.</h6>
-    <p>Thank you for visiting our website.</p>
-    <p>Our services are as follows:</p>
-    <ul>
-        <li>Beat making</li>
-        <li>Audio recording</li>
-        <li>Mixing and mastering</li>
-        <li>Live performance</li>
-        <li>Music Lessons</li>
-        <li>Consultation</li>
-    </ul>
-    <ol>
-        <li>Beat making</li>
-        <li>Audio recording</li>
-        <li>Mixing and mastering</li>
-        <li>Live performance</li>
-        <li>Music Lessons</li>
-        <li>Consultation</li>
-    </ol>
-    <img src="download 2.jfif" alt="Music studio" width="250" height="200">
-    <img src="download3.jfif" alt="Another music studio" width="250" height="200">
-    <table>
-        <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Duration</th>
-            <th>Availability</th>
-        </tr>
-        <tr>
-            <td>Beat making</td>
-            <td>$50</td>
-            <td>2 hours</td>
-            <td>Monday-Friday</td>
-        </tr>
-        <tr>
-            <td>Audio recording</td>
-            <td>$100</td>
-            <td>4 hours</td>
-            <td>Monday-Friday</td>
-        </tr>
-        <tr>
-            <td>Mixing and mastering</td>
-            <td>$150</td>
-            <td>6 hours</td>
-            <td>Thursdays and Saturdays</td>
-        </tr>
-        <tr>
-            <td>Live performance</td>
-            <td>$200</td>
-            <td>8 hours</td>
-            <td>Saturdays and Sundays</td>
-        </tr>
-        <tr>
-            <td>Music Lessons</td>
-            <td>$350</td>
-            <td>10 hours</td>
-            <td>Mondays-Wednesdays</td>
-        </tr>
-        <tr>
-            <td>Consultation</td>
-            <td>$400</td>
-            <td>2 hours</td>
-            <td>Monday-Friday</td>
-        </tr>
-    </table>
-    <a href="https://www.dandollarmusic.com">Visit our website for more information</a>
-    <a href="signup.html">Sign Up for our services</a>
-    <video controls>
-        <source src="Download.mp4" type="video/mp4" width="250" height="300">
-        Your browser does not support the video tag.
-    </video>
-    <video controls>
-        <source src="Download 2.mp4" type="video/mp4" width="250" height="300">
-        Your browser does not support the video tag.
-    </video>
-    <button> <a href="https://www.facebook.com/dandollarmusic"><i class="fa-brands fa-facebook"></i></a></button>
-    <button> <a href="https://www.instagram.com/dandollarmusic"><i class="fa-brands fa-instagram"></i></a></button>
-    <button> <a href="https://www.twitter.com/dandollarmusic"><i class="fa-brands fa-twitter"></i></a></button>
-    <header>
-        <h1>Welcome to Dandollar Music Production Studios</h1>
-</body>
 
+  <header>
+    <h1>Dandollar Music Production Studios</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bring Your Sound to Life</h2>
+    <p>
+      Welcome to Dandollar Music Production Studios, the best place for beat making,
+      audio recording, mixing, mastering, live performances, music lessons and music consultation.
+    </p>
+
+    <a href="signup.html" class="btn">Book a Session</a>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+      <div class="card">
+        <i class="fa-solid fa-music"></i>
+        <h3>Beat Making</h3>
+        <p>Professional beats created to match your sound and style.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-microphone"></i>
+        <h3>Audio Recording</h3>
+        <p>High-quality studio recording for artists, podcasts and voiceovers.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-sliders"></i>
+        <h3>Mixing & Mastering</h3>
+        <p>Clean, balanced and industry-ready sound for your music.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-guitar"></i>
+        <h3>Music Lessons</h3>
+        <p>Learn music production, performance and recording skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing">
+    <h2>Pricing</h2>
+
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>Price</th>
+        <th>Duration</th>
+        <th>Availability</th>
+      </tr>
+
+      <tr>
+        <td>Beat Making</td>
+        <td>$50</td>
+        <td>2 hours</td>
+        <td>Monday - Friday</td>
+      </tr>
+
+      <tr>
+        <td>Audio Recording</td>
+        <td>$100</td>
+        <td>4 hours</td>
+        <td>Monday - Friday</td>
+      </tr>
+
+      <tr>
+        <td>Mixing and Mastering</td>
+        <td>$150</td>
+        <td>6 hours</td>
+        <td>Thursday and Saturday</td>
+      </tr>
+
+      <tr>
+        <td>Live Performance</td>
+        <td>$200</td>
+        <td>8 hours</td>
+        <td>Saturday and Sunday</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <h2>Studio Gallery</h2>
+
+    <div class="gallery">
+      <img src="download 2.jfif" alt="Music studio">
+      <img src="download3.jfif" alt="Another music studio">
+
+      <video controls>
+        <source src="Download.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <video controls>
+        <source src="Download 2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Dandollar Music Production Studios</h3>
+    <p>Professional music production for artists around the world.</p>
+
+    <div class="socials">
+      <a href="https://www.facebook.com/dandollarmusic"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/dandollarmusic"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.twitter.com/dandollarmusic"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+  </footer>
+
+</body>
 </html>
